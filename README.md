@@ -19,14 +19,19 @@ Perform text preprocessing tasks: tokenization, stop-word removal, stemming, and
 
 2: Exploratory Data Analysis (EDA):
 
-Generate summary statistics: the distribution of happiness levels, and common keywords or phrases.
+ 2.1: Generate summary statistics: the distribution of happiness levels, and common keywords or phrases.
+
+ 2.2: Word Clouds and Keywords:
+
+    Generate word clouds to highlight the most frequently mentioned words or phrases associated with happiness.
+    Identify interesting keywords and phrases that appear in the happy moments.
 
 3: Sentiment Analysis:
 
 Apply sentiment analysis to classify the happiness levels of the moments (extremely happy, very happy, moderately happy, slightly happy, neutral happy).
 Visualize the distribution of happiness levels in the dataset.
 
-4: Topic Modeling:
+4: Topic Modeling:(word2Vec)
 
 Use topic modeling techniques (e.g., LDA or NMF) to identify common themes or topics within the happy moments.
 Visualize the topics and their prevalence in the dataset.
@@ -36,10 +41,7 @@ Visualize the topics and their prevalence in the dataset.
 Analyze whether there are any temporal patterns in the happy moments by examining the timestamps associated with each entry.
 Create time series visualizations to show how happiness evolves over time.
 
-6: Word Clouds and Keywords:
 
-Generate word clouds to highlight the most frequently mentioned words or phrases associated with happiness.
-Identify interesting keywords and phrases that appear in the happy moments.
 
 7: Data Storytelling:
 
