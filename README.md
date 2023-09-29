@@ -14,8 +14,8 @@ We have already gotten the source where people's happiness come, but I'm curious
 
 1: Data Collection & Preprocessing:
 
-Clean the dataset by removing irrelevant and noisy data.
-Perform text preprocessing tasks: tokenization, stop-word removal, stemming, and lemmatization.
+   Clean the dataset by removing irrelevant and noisy data.
+   Perform text preprocessing tasks: tokenization, stop-word removal, and lemmatization.
 
 2: Exploratory Data Analysis (EDA):
 
@@ -23,41 +23,48 @@ Perform text preprocessing tasks: tokenization, stop-word removal, stemming, and
 
  2.2: Word Clouds and Keywords:
 
-    Generate word clouds to highlight the most frequently mentioned words or phrases associated with happiness.
-    Identify interesting keywords and phrases that appear in the happy moments.
+      Generate word clouds to highlight the most frequently mentioned words or phrases associated with happiness.
+      Identify interesting keywords and phrases that appear in the happy moments.
 
 3: Sentiment Analysis:
 
-Apply sentiment analysis to classify the happiness levels of the moments (extremely happy, very happy, moderately happy, slightly happy, neutral happy).
-Visualize the distribution of happiness levels in the dataset.
+   Apply sentiment analysis to classify the happiness levels of the moments 
+   Visualize the distribution of happiness levels in the dataset.
 
 4: Topic Modeling:(word2Vec)
 
-Use topic modeling techniques (e.g., LDA or NMF) to identify common themes or topics within the happy moments.
-Visualize the topics and their prevalence in the dataset.
-
-5: Temporal Analysis:
-
-Analyze whether there are any temporal patterns in the happy moments by examining the timestamps associated with each entry.
-Create time series visualizations to show how happiness evolves over time.
+   Visualize the topics and prevalence in the dataset
 
 
+5: StoryLine and Insights & Findings:
 
-7: Data Storytelling:
+   5.1: the distribution of the length of texts' key contend is relatively concentrated and skews to the right:
+        5.1.1: Concentrated may suggest: 
+           people's levels of happiness are relatively consistent.
+           The observed values are subject to certain constraints or conditions, leading to limited variations within a specific range
+        5.1.2: Skews to the right may suggest:
+           A common phenomenon in emotion research is that people tend to share and document positive experiences more frequently, while sharing negative emotions less often. 
+           HappyDB may contain a higher proportion of topics related to positive emotions and happiness.
+           The sampling method of the dataset may have resulted in the selection of more positive samples, introducing sampling bias.
+   
+   5.2: the combination of marital status and gender has significant influence on happiness
+        5.2.1: Sequence of events:
+           the happiness distribution by marital status shows a little difference between different group;
+           further, I added one more feature into it and performed ANOVA analysis to see the impact
+           Assumption0: marital status and gender don't have significant impact on happiness level
+           I got an extremely small p value, which contribute to refusing the 0 assumption;
+           To get more details about it, I did a heatmap, to show the difference
+        5.2.2: separated male shows the highest level of happiness while widowed male shows the lowest level of happiness
+           This finding is interesting, and I think we can dig more about it
 
-Combine the insights gained from data mining, statistical analysis, and visualization into a cohesive data story.
-Create a narrative that explains the findings in a clear and engaging manner, catering to a general audience.
-Visualization:
 
-Develop informative and visually appealing charts, graphs, and infographics to support the data story.
-Use storytelling techniques to guide the audience through the analysis and insights.
+   5.3: use v2w, got drinks related, among all the drinks, coffee got the most popularity
 
-8: Conclusion and Reflection:
+6: Conclusion and Reflection:
 
-Key findings and insights: 
-Reflect on the significance of understanding and celebrating moments of happiness.
-Presentation and Sharing:
-
-This project will not only provide valuable insights into the HappyDB dataset but also allow you to practice data mining, statistical analysis, and data storytelling skills while sharing the joyous moments of individuals with others.
+   6.1: Key findings and insights shown in 5
+   6.2: Through this project, I reflect on the significance of understanding and celebrating moments of happiness.
+   6.3: This project not only provide valuable insights into the HappyDB dataset but also allow me to practice data mining, statistical analysis, and data storytelling skills.
+   6.4: There are still many areas worth improving and exploring further, for example, the sentiment analysis results are not specificated enough, we may use more sophiscated methods to upgrade the model; word2vector model are not gotten leverage it's real charm, may use it to do more work; the ANOVA results can get further researched, to see if different features are working on each other; the drinks part is a bit funny, just as an addition 
 
 
